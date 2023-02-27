@@ -5,14 +5,13 @@
   "engines": {
     "node": "14.15.0"
   },
-  "main": "server.ts",
   "scripts": {
     "start": "node server.js",
     "tsc": "npx tsc",
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deploy": "npm run build && .\\eb list && .\\eb use udagram-api-dev && .\\eb deploy",
+    "deploy": "npm run build && eb list && eb use udagram-api-dev && eb deploy",
     "build": " tsc && cp src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
