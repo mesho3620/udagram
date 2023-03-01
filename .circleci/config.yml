@@ -48,6 +48,7 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
+            cd udagram/udagram-api 
             cp src/config www/config
             cp -R .elasticbeanstalk www/.elasticbeanstalk
             cp .npmrc www/.npmrc
