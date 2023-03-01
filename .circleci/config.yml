@@ -48,14 +48,6 @@ jobs:
           command: |
             echo "TODO: Build the backend API"
             npm run api:build
-            cd udagram/udagram-api 
-            cp -rf src/config www/config
-            cp -R .elasticbeanstalk www/.elasticbeanstalk
-            cp .npmrc www/.npmrc
-            cp package.json www/package.json
-            cd www 
-            zip -r Archive.zip . 
-            cd ..
 
   # deploy step will run only after manual approval
   deploy:
