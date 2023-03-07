@@ -5,7 +5,7 @@ branch-defaults:
   master:
     environment: Udagramapi-env
 deploy:
-  artifact: www/www.zip
+  artifact: www/Archive.zip
 global:
   application_name: udagram-api
   branch: null
