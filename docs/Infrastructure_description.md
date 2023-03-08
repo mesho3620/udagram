@@ -15,4 +15,4 @@ used to host Backend API
 
 ## Diagram
 
-![Screenshot](infrastructure%20overview.png.png)
+![Screenshot](infrastructure%20overview.png)
