@@ -1,1 +1,1 @@
-![Screenshot](Pipline%20overview.png.png)
+![Screenshot](Pipline%20overview.png)
